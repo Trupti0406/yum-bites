@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Footer
+    <footer
       class="bg-dark text-center text-white"
       style={{
-        position: "fixed",
+        position: "relative",
         bottom: "0",
         width: "100%",
         height: "60px",
@@ -16,7 +16,7 @@ const Footer = () => {
         <hr />
         Copyright © YumBytes 2023 | Created by Trupti Yadav
       </div>
-    </Footer>
+    </footer>
   );
 };
 

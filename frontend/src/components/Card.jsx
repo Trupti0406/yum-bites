@@ -5,7 +5,7 @@ const Card = () => {
     <div
       className="card mt-3 text-white shadow border-white"
       style={{
-        width: "17rem",
+        width: "18rem",
         maxHeight: "360px",
         backgroundColor: "#232123",
       }}
