@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+// const mongoURI = "mongodb+srv://yumBites:yumBites@cluster0.ihvbpuy.mongodb.net/yumBitesMern?retryWrites=true&w=majority";
 const mongoURI =
-  "mongodb+srv://yumBites:yumBites@cluster0.ihvbpuy.mongodb.net/yumBitesMern?retryWrites=true&w=majority";
+  "mongodb://yumBites:yumBites@ac-cocuf4p-shard-00-00.ihvbpuy.mongodb.net:27017,ac-cocuf4p-shard-00-01.ihvbpuy.mongodb.net:27017,ac-cocuf4p-shard-00-02.ihvbpuy.mongodb.net:27017/yumBitesMern?ssl=true&replicaSet=atlas-ka8th9-shard-0&authSource=admin&retryWrites=true&w=majority";
 
 const mongoDB = async () => {
   await mongoose.connect(

@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
-      class="bg-dark text-center text-white"
+      className="bg-dark text-center text-white"
       style={{
         position: "relative",
         bottom: "0",
