@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
 });
 app.use(express.json());
 app.use("/api", require("./Routes/CreateUsers"));
+app.use("/api", require("./Routes/DisplayData"));
 app.listen(port, () => {
   console.log(`Sever is running on port ${port}`);
 });
