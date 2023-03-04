@@ -28,7 +28,7 @@ const Header = () => {
               <Link
                 className="nav-link active text-white"
                 aria-current="page"
-                to="/home"
+                to="/"
               >
                 Home
               </Link>
