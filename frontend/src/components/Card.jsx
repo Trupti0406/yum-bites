@@ -16,6 +16,8 @@ const Card = (props) => {
         src={props.imgSrc}
         alt={`of ${props.foodName}`}
         className="card-img-top"
+        style={{
+          height:"150px", objectFit:"cover"}}
       />
       <div className="card-body text-center">
         <h5 className="card-title">{props.foodName}</h5>
