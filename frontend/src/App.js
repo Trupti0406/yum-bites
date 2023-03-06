@@ -4,17 +4,20 @@ import Header from "./components/Header";
 import Login from "./screens/Login";
 import Footer from "./components/Footer";
 import Signup from "./screens/Signup";
+import { CartProvider } from "./components/ContextReducer";
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/createuser" element={<Signup />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/createuser" element={<Signup />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 
